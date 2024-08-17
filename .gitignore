@@ -1,4 +1,6 @@
 .vs/
+x64/
+
 Online library system.sln
 Online library system.vcxproj
 Online library system.vcxproj.filters
