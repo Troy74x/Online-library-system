@@ -12,8 +12,8 @@ class Book
 private:
 	string title, isbn, category;
 
-	int id;
-	double averageRating;
+	int id,numRates;
+	double averageRating,sumRates;
 
 	User author;
 
@@ -32,7 +32,6 @@ public:
 	int getId() const;
 	void setCategory(string);
 	string getCategory()const;
-
 	void setAuthor(const User&);
 	User getAuthor() const;
 

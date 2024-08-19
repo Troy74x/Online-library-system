@@ -11,7 +11,7 @@ User::User()
 	name = email = password = "";
 }
 
-User::User(string name ,int age,string email,string password)
+User::User(string name, int age, string email, string password)
 {
 	count++;
 	id = count;
@@ -77,6 +77,16 @@ int User::getId() const
 	return id;
 }
 
+int User::getCount() const
+{
+	return count;
+}
+
+void User::setCount(int x)
+{
+	count=x;
+}
+
 void User::DisplayInfo()
 {
 	cout << "========================User " << id << " info========================"<<el;
@@ -103,7 +113,7 @@ ostream& operator<<(ostream& output , const User& user)
 
 istream& operator>>(istream& input, User& user)
 {
-	cout << "Enter user information in this order" << el;
+	cout << "Enter user information in this order : ";
 	cout << "Name Age Email Password" << el;
 	input >> user.name >> user.age >> user.email >> user.password;
 	return input;

@@ -30,6 +30,8 @@ public:
     int getAge()const;
     void setId(int);
     int getId()const;
+    int getCount()const;
+    void setCount(int);
 
 
     void DisplayInfo();
