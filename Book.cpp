@@ -12,7 +12,8 @@ Book::Book()
 	averageRating = 0.0;
 
 	User author;
-	author.setCount(author.getCount() - 2); //user when called in book.h and book.cpp incremented count of users 2 times
+
+	User::count -= 2; //user when called in book.h and book.cpp incremented count of users 2 times
 
 	numRates = 0;
 	sumRates = 0.0;
