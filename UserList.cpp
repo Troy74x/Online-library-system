@@ -62,6 +62,7 @@ void UserList::deleteUser(int id)
 			for (int j = i; j < usersCount-1; j++)
 			{
 				users[j] = users[j + 1];
+
 				users[j].setId(users[j].getId() - 1);
 				User::count--;
 			}

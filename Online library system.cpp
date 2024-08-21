@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "UserList.h";
+#include "BookList.h"
 
 #define el "\n"
 
@@ -10,13 +10,19 @@ using namespace std;
 
 int main()
 {
-	UserList U(5);
-	User u1, u2, u3;
 
-	
-	U.addUser(u1);
-	U.addUser(u2);
-	U.addUser(u3);
-	U.deleteUser(2);
-	cout << U;
+	BookList bl(5);
+	Book b1, b2, b3;
+
+	b1.rateBook(1);
+	b2.rateBook(2);
+	b3.rateBook(3);
+
+	bl.addBook(b1);
+	bl.addBook(b2);
+	bl.addBook(b3);
+
+	Book hrb = bl.getTheHighestRatedBook();
+
+	cout << hrb;
 }
