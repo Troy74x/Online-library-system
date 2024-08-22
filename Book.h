@@ -12,8 +12,8 @@ class Book
 private:
 	string title, isbn, category;
 
-	int id,numRates;
-	double averageRating,sumRates;
+	int id;
+	double averageRating,numRates,sumRates;
 
 	User author;
 

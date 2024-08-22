@@ -15,7 +15,7 @@ Book::Book()
 
 	User::count -= 2; //user when called in book.h and book.cpp incremented count of users 2 times
 
-	numRates = 0;
+	numRates = 0.0;
 	sumRates = 0.0;
 }
 
@@ -32,7 +32,7 @@ Book::Book(string title, string isbn, string category)
 
 	User author;
 
-	numRates = 0;
+	numRates = 0.0;
 	sumRates = 0.0;
 }
 
@@ -134,6 +134,6 @@ ostream& operator<<(ostream& output, const Book& book)
 istream& operator>>(istream& input, Book& book)
 {
 	cout << "Enter book information in this order : Title Isbn Cateogry" << el;
-	input >> book.title >> book.isbn >> book.id;
+	input >> book.title >> book.isbn >> book.category;
 	return input;
 }

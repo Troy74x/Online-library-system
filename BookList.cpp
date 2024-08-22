@@ -72,22 +72,6 @@ void BookList::deleteBook(int id)
 	}
 }
 
-Book BookList::getTheHighestRatedBook()
-{
-	int index = -1;
-	double highestRate = -1;
-
-	for (int i = 0; i < booksCount; i++)
-	{
-		if (books[i].getAverageRating() > highestRate)
-		{
-			index = i;
-			highestRate = books[i].getAverageRating();
-		}
-	}
-	return books[index];
-}
-
 void BookList::getBooksForUser(const User& user)
 {
 	for (int i = 0; i < booksCount; i++)

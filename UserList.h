@@ -17,6 +17,7 @@ public:
     void deleteUser(int);
 
     friend ostream& operator<<(ostream&, const UserList&);
+    User& operator[] (int);
 
     ~UserList();
 };

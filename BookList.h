@@ -15,7 +15,6 @@ public:
 	Book* searchBook(string);
 	Book* searchBook(int);
 	void deleteBook(int); 
-	Book getTheHighestRatedBook();
 	void getBooksForUser(const User&); 
 
 	Book& operator[] (int);

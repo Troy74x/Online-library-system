@@ -67,9 +67,23 @@ void UserList::deleteUser(int id)
 				User::count--;
 			}
 			usersCount--;
-			capacity--;
 			break;
 		}
+	}
+}
+
+
+
+User& UserList::operator[](int position)
+{
+	if (position >= 0 && position < usersCount)
+	{
+		return users[position];
+	}
+	else
+	{
+		cout << "Position error" << el;
+		exit(1);
 	}
 }
 
